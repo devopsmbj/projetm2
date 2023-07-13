@@ -1,0 +1,12 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRouteTCP
+metadata:
+  name: wazuh-ingress-routetcp3
+spec:
+  entryPoints:
+    - tcp
+  routes:
+    - match: HostSNI(`*`) && Path(`/`)
+      services:
+        - name: wazuh
+          port: 55000

@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: prometheus-ingressroute
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`example.prometheus.com`)
+      kind: Rule
+      services:
+        - name: prometheus-service
+          port: 8080
+

@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: wazuh-ingressroute
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`wazuh.example.com`)
+      kind: Rule
+      services:
+        - name: dashboard
+          port: 443
+          scheme: https

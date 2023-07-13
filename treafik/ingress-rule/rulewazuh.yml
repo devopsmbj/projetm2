@@ -1,0 +1,38 @@
+## Nginx Ingress
+## Follow https://devopscube.com/setup-ingress-kubernetes-nginx-controller/
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dashbord-wazuh
+  namespace: wazuh
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  # Use the host you used in your kubernetes Ingress Configurations
+  - host: example.wazuh.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: dashbord
+            port:
+              number: 5601
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - wazuh.apps.shaker242.lab
+    secretName: wazuh-secret
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: wazuh-secret
+  namespace: wazuh
+data:
+# USe base64 in the certs
+  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZpVENDQkhHZ0F3SUJBZ0lCQVRBTkJna3Foa2lHOXcwQkFRc0ZBRENCd0RFak1DRUdBMVVFQXhNYWFXN$ 
+  tls.key: LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2d0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktrd2dnU2xBZ0VBQW9JQkFRRGxGbXpBV3RTT0lxd$
+

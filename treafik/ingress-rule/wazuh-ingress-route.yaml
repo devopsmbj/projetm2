@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: wazuh2-ingressroute
+  namespace: wazuh
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`wazuh.example.com`)
+      kind: Rule
+      services:
+        - name: dashbord
+          port: 5601
