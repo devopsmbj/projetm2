@@ -1,5 +1,5 @@
 # Traefik
-
+![Role Wazuh](https://wazuh.com/uploads/2020/11/rbac.gif)
 [Traefik](https://traefik.io/) is a modern HTTP reverse proxy and load balancer made to deploy
 microservices with ease.
 
