@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: /snap/kompose/19/kompose-linux-amd64 convert -f docker-compose
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: cortex
+  name: cortex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cortex
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: /snap/kompose/19/kompose-linux-amd64 convert -f docker-compose
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: cortex
+    spec:
+      containers:
+      - env:
+        - name: job_directory
+          value: /tmp/cortex-jobs
+        image: thehiveproject/cortex:3.1.7
+        imagePullPolicy: ""
+        name: cortex
+        ports:
+        - containerPort: 9001
+        resources: {}
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: cortex-claim0
+        - mountPath: /tmp/cortex-jobs
+          name: cortex-claim1
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: cortex-claim0
+        persistentVolumeClaim:
+          claimName: cortex-claim0
+      - name: cortex-claim1
+        persistentVolumeClaim:
+          claimName: cortex-claim1
+status: {}
