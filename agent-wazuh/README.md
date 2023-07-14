@@ -8,7 +8,7 @@ solution for threat detection, integrity monitoring, incident response and compl
   If `pwd` commande output = `agent-wazuh`
   do 
   ```
-  kubectl -f wazuh-daemon-sets.yaml
+  kubectl -f wazuh-daemonset.yaml
  ```
 ## Description
 
