@@ -24,9 +24,11 @@ En combinant ces trois aspects clés - protection proactive, collaboration et é
 
 
 ### Prerequisites
-Si vous avez déja un cluster AKS manager passé cette étape.
+Si vous avez déja un cluster AKS manager en locale passé cette étape.
+
 1. [x] `Terraform` en local 
 2. [x] Une VM de Gestion en locale 
+3. [x] Un compte azure
 
 ### Préparation des ressources pour initialiser le projet
 1. [x] Clonner le Projet [`git clone`]( https://github.com/devopsmbj/projetm2)
@@ -44,7 +46,7 @@ Suivre dans chaque dossier sa procedure d'installation et de configuration
 6. [x] [Wazuh agent pour surveiller l'état du AKS](https://github.com/devopsmbj/projetm2/tree/main/agent-wazuh)
 
 
-🛂 **Warning**: La procédure d'installation de chaque composant est placé dans son repertoire
+🛂 **Warning**: La procédure d'installation de chaque composant est placé dans son README
 
 ![Devops](devops.gif)
 

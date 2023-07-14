@@ -1,15 +1,18 @@
 ## ☸️ kubernetes prometheus Setup
-
-Complete prometheus monitoring stack setup on Kubernetes.
-
-Idea of this repo to understand all the components involved in prometheus setup.
+Ces Manifestes Kubebernetes vont creer un cluster Prometheus dans AKS.
 
 You can find the full tutorial from here--> [Kubernetes Monitoring setup Using Prometheus](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/)
 
-## 🚀 CKA, CKAD, CKS, KCNA & PCA Coupon Codes
-
-If you are preparing for CKA, CKAD, CKS, or KCNA exam, **save 20%** today using code **SCRIPT20** at https://kube.promo/devops. It is a limited-time offer. 
-
+## 🚀 Deployement dans AKS depuis la VM de gestion en locale
+1. [x] Se placer dans le dossier prometheus (pwd => prometheus)
+2. [x] Créer les ressources prometheus dans AKS 
+'''
+    kubectl apply -f . 
+''' 
+3. [x]  Un cluster prometheus devrait etre crée dans le Namespace monitoring verification des ressources créer
+'''
+    kubectl get all -n monitoring 
+''' 
 ## Other Manifest repos
 
 Kube State metrics manifests: https://github.com/devopscube/kube-state-metrics-configs
