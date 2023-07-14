@@ -1,9 +1,7 @@
 ## ☸️ kubernetes prometheus Setup
-Ces Manifestes Kubebernetes vont creer un cluster Prometheus dans AKS.
+Ces Manifest Kubebernetes vont creer un cluster Prometheus dans AKS.
 
-You can find the full tutorial from here--> [Kubernetes Monitoring setup Using Prometheus](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/)
-
-## 🚀 Deployement dans AKS depuis la VM de gestion en locale
+## 🚀 Deployement dans AKS depuis la VM de gestion en local
 1. [x] Se placer dans le dossier prometheus (pwd => prometheus)
 2. [x] Créer les ressources prometheus dans AKS
     ```
@@ -13,6 +11,7 @@ You can find the full tutorial from here--> [Kubernetes Monitoring setup Using P
    ```
     kubectl get all -n monitoring
    ```
+You can find the full tutorial from here--> [Kubernetes Monitoring setup Using Prometheus](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/)
 ## Other Manifest repos
 
 Kube State metrics manifests: https://github.com/devopscube/kube-state-metrics-configs
