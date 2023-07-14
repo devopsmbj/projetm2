@@ -12,12 +12,12 @@ Ce projet Terraform permet de déployer un cluster Kubernetes Azure (AKS) avec u
 2. Accédez au répertoire du projet :
 cd projetm2
 
-## Excution de Terraform
+## Terraform init
 
 3. Initialisez Terraform :
 avec la commande "terraform init"
 
-le terraform init est utilisée pour initialiser un projet Terraform dans un répertoire de travail
+le terraform init est utilisée pour initialiser un projet Terraform dans un répertoire de travail ça va préparer l'environnement Terraform en téléchargeant les plugins requis.
 
 
 4.  Les fichiers de Configuration
@@ -29,12 +29,13 @@ aks.tf : Contient la configuration Terraform pour créer le cluster Kubernetes A
 output.tf : Définit les sorties (outputs) Terraform pour afficher des informations après la création des ressources.
 
 provider.tf : Configure le fournisseur Microsoft Azure pour Terraform.
-
-5. Création des ressources Azure avec  la commande "Terraform Plan"
+## Terraform Plan
+5. Création des ressources Azure avec la commande "Terraform Plan"
 
 cette commande est utilisée pour créer un plan d'exécution. Terraform lit les fichiers de configuration (tels que aks.tf, output.tf) pour déterminer l'état actuel de l' infrastructure et les modifications apportées depuis la dernière exécution.
-
+## Terraform Apply
 6. Lancement avec la commande "terraform apply"
 
-qui à pour but d'exécuter le plan d'exécution Terraform et appliquer les changements dee l' infrastructure. ça vérifie l'état actuel de votre infrastructure, crée et  met à jour ou supprime les ressources nécessaires pour atteindre l'état souhaité défini dans les fichiers de configuration..
+
+cette commande à pour but d'exécuter le plan d'exécution Terraform et appliquer les changements dee l' infrastructure. ça vérifie l'état actuel de l'infrastructure, crée et met à jour ou supprime les ressources nécessaires pour atteindre l'état souhaité défini dans les fichiers de configuration.
 
