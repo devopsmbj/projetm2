@@ -4,6 +4,12 @@
 Wazuh is a free, open source and enterprise-ready security monitoring
 solution for threat detection, integrity monitoring, incident response and compliance.
 
+## Deployement for AKS
+  If `pwd` commande output = `agent-wazuh`
+  do 
+  ```
+  kubectl -f wazuh-daemon-sets.yaml
+ ```
 ## Description
 
 Wazuh Agent as Docker Image with auto registration on Wazuh server.
