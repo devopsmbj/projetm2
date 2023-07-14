@@ -5,14 +5,14 @@ You can find the full tutorial from here--> [Kubernetes Monitoring setup Using P
 
 ## 🚀 Deployement dans AKS depuis la VM de gestion en locale
 1. [x] Se placer dans le dossier prometheus (pwd => prometheus)
-2. [x] Créer les ressources prometheus dans AKS 
-'''
+2. [x] Créer les ressources prometheus dans AKS
+    ```
     kubectl apply -f . 
-''' 
+   ```
 3. [x]  Un cluster prometheus devrait etre crée dans le Namespace monitoring verification des ressources créer
-'''
-    kubectl get all -n monitoring 
-''' 
+   ```
+    kubectl get all -n monitoring
+   ```
 ## Other Manifest repos
 
 Kube State metrics manifests: https://github.com/devopscube/kube-state-metrics-configs
