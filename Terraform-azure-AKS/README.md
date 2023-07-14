@@ -1,4 +1,4 @@
-# Projet Terraform AKS
+# Terraform-Azure-AKS
 
 Ce projet Terraform permet de déployer un cluster Kubernetes Azure (AKS) avec une ressource de groupe Azure.
 
