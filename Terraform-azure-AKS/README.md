@@ -6,7 +6,7 @@ Ce projet Terraform permet de déployer un cluster Kubernetes Azure (AKS) avec u
 ## Installation
 
 1. Clonez le repository GitHub en local attention de bien avoir configuré la clé SSH sur Github.
- : https://github.com/devopsmbj/projetm2
+ : git@github.com:devopsmbj/projetm2.git
 
 
 2. Accédez au répertoire du projet :
