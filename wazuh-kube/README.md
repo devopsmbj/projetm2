@@ -2,18 +2,40 @@
 Deployer un cluster Wazuh avec un acces au dashboard via traefik loadbalancer
 
 
-## Branches
-
-* `master` branch contains the latest code, be aware of possible bugs on this branch.
-* `stable` branch on correspond to the last Wazuh stable version.
-
 
 ## Description
 Wazuh est une solution de détection et de réponse aux incidents de sécurité, conçue pour aider les organisations à renforcer leur posture de sécurité en surveillant et en analysant les activités de leurs systèmes, réseaux et applications. Basé sur l'architecture ouverte d'OSSEC, Wazuh offre une approche évolutive et flexible pour la détection des menaces, la gestion des journaux et la conformité réglementaire.
 
 ## AZURE AKS deployement
-
-
+Pour déployer un cluster wazuh sur AKS: il faut se placer dans le dossier wazuh-kube
+```
+ kubectl apply -k envs/local-env/
+```
+On confugure les ingress et ingressroute necessaire dans traefik donc pour tester wazuh, il faut deployer et configurer le loadbalancer avec helm:
+il faut se placer dans le dossier traefik et l'installer 
+```
+ helm install --set="additionalArguments={--serverstransport.insecureskipverify=true}" traefik traefik/traefik
+```
+Pour configrer les ingress et ingressroute de wazuh : il  faut se placer dans le dossier traefik/ingress-rule et apply tous les manifests yamls préfixé de wazuh
+```
+cd traefik/ingress-rule
+```
+```
+kubectl apply -f wazuh-ing-rt-tcp1.yaml -n wazuh
+```
+```
+kubectl apply -f wazuh-ing-rt-tcp2.yaml -n wazuh
+```
+```
+kubectl apply -f wazuh-ing-rt-tcp3.yaml -n wazuh
+```
+```
+kubectl apply -f wazuh-ingress.yml -n wazuh
+```
+```
+kubectl apply -f wazuh-ingressroute.yaml -n wazuh
+```
+### le dashbord wazuh est maintenant disponible sur `wazuh.example.com`
 
 ## Directory structure
 
