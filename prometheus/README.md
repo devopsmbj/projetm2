@@ -11,6 +11,11 @@ Ces Manifest Kubebernetes vont creer un cluster Prometheus dans AKS.
    ```
     kubectl get all -n monitoring
    ```
+4. [x]  Pour que le dashbord wazuh soit disponible sur `example.prometheus.com` placer vous dans traefik/ingress-rule et appliqué la l'ingress route 
+   ```
+    kubectl apply prometheus-ingressroute.yaml -n monitoring
+   ```
+#### veuillez à ce que l'address ip du `loadbalancer` traefik et l'adress DNS `example.prometheus.com` soit renseigné dans le fichier HOST
 You can find the full tutorial from here--> [Kubernetes Monitoring setup Using Prometheus](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/)
 ## Other Manifest repos
 
