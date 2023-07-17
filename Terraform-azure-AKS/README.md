@@ -39,3 +39,5 @@ cette commande est utilisée pour créer un plan d'exécution. Terraform lit les
 
 cette commande à pour but d'exécuter le plan d'exécution Terraform et appliquer les changements dee l' infrastructure. ça vérifie l'état actuel de l'infrastructure, crée et met à jour ou supprime les ressources nécessaires pour atteindre l'état souhaité défini dans les fichiers de configuration.
 
+## Terraform output
+Récuperer la configuration de AKS dans le tfstate puis créer un fichier `config ` dans  un dossier `.kube` et collé la configuration.
