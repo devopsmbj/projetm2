@@ -38,8 +38,8 @@ Si vous avez déja un cluster AKS manager en locale passé cette étape.
 
 ### Deployement des ressources sur AKS () :
 Suivre dans chaque dossier sa procedure d'installation et de configuration  
-1. [x] [Prometheus](https://github.com/devopsmbj/projetm2/tree/main/prometheus)
-2. [x] [Wazuh](https://github.com/devopsmbj/projetm2/tree/main/wazuh-kube)
+2. [x] [Prometheus](https://github.com/devopsmbj/projetm2/tree/main/prometheus)
+1. [x] [Wazuh](https://github.com/devopsmbj/projetm2/tree/main/wazuh-kube)
 3. [x] [Treafik](https://github.com/devopsmbj/projetm2/tree/main/treafik)
 4. [x] [Configuration des regles pour utiliser une seule ip publique](https://github.com/devopsmbj/projetm2/tree/main/treafik/ingress-rule) 
 5. [x] [TheHive et Cortex](https://github.com/devopsmbj/projetm2/tree/main/thehive-cortex) 
