@@ -38,13 +38,15 @@ Si vous avez déja un cluster AKS manager en locale passé cette étape.
 
 ### Deployement des ressources sur AKS () :
 Suivre dans chaque dossier sa procedure d'installation et de configuration  
-2. [x] [Prometheus](https://github.com/devopsmbj/projetm2/tree/main/prometheus)
 1. [x] [Wazuh](https://github.com/devopsmbj/projetm2/tree/main/wazuh-kube)
+2. [x] [Prometheus](https://github.com/devopsmbj/projetm2/tree/main/prometheus)
 3. [x] [Treafik](https://github.com/devopsmbj/projetm2/tree/main/treafik)
 4. [x] [Configuration des regles pour utiliser une seule ip publique](https://github.com/devopsmbj/projetm2/tree/main/treafik/ingress-rule) 
 5. [x] [TheHive et Cortex](https://github.com/devopsmbj/projetm2/tree/main/thehive-cortex) 
 6. [x] [Wazuh agent pour surveiller l'état du AKS](https://github.com/devopsmbj/projetm2/tree/main/agent-wazuh)
 
+## Conclusion
+Compte tenu des contraintes liées aux comptes étudiant d'azure, nous sommes adapter aux mieux pour répondre aux besoins fonctionel. Ainsi nous avons une solution non integré avec les technologies qui fonctionnent indépendemment. Il nous faut la maitise de la  configuration de notre loadbalancer treafik pour integrer tous les outils. 
 
 🛂 **Warning**: La procédure d'installation de chaque composant est placé dans son README
 
