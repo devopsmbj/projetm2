@@ -45,6 +45,10 @@ Cela déploiera le service, le déploiement et la demande de volume persistant p
 5.  il faut vérifier que toutes les ressources ont été déployées :
 
     avec la commande: "kubectl get all -n thehive"
-
+6. Pour finir il faut confugurer les ingress routes pour cortex et thehive : se placer dans traefik/ingress-rule
+   
+- kubectl apply -f thehive-ingressroute.yaml
+- kubectl apply -f cortex-ingressroute.yml
+  ### cortex et thehive sont maintenant disponible sur :`example.cortex.com`et `example.thehive.com` 
 
 
