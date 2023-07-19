@@ -38,6 +38,9 @@ kubectl apply -f wazuh-ingressroute.yaml -n wazuh
 ### le dashbord wazuh est maintenant disponible sur `wazuh.example.com`
 #### veuillez à ce que l'address ip du `loadbalancer` traefik et l'adDress DNS `wazuh.example.com` soit renseigné dans le fichier HOST
 
+
+![wazuh](../wazuh.png)
+
 ## Directory structure
 
     ├── CHANGELOG.md
