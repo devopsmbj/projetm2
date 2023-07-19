@@ -49,6 +49,10 @@ Cela déploiera le service, le déploiement et la demande de volume persistant p
    
 - kubectl apply -f thehive-ingressroute.yaml
 - kubectl apply -f cortex-ingressroute.yml
-  ### cortex et thehive sont maintenant disponible sur :`example.cortex.com`et `example.thehive.com` 
+  ### cortex et thehive sont maintenant disponible sur :`example.cortex.com`et `example.thehive.com`
+
+
+
+![theHive](../thehive.png)
 
 
