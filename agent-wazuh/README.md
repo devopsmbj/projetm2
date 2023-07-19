@@ -15,6 +15,9 @@ solution for threat detection, integrity monitoring, incident response and compl
   kubectl get all -n wazuh
   ```
   DaemonSet will deploy to wazuh namespace.
+
+![wazuh-agent](../wazuh-agent.png)
+  
 ## Description
 
 Wazuh Agent as Docker Image with auto registration on Wazuh server.
