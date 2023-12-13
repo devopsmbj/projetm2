@@ -13,9 +13,9 @@ Et celles-ci comprennent même plusieurs lignes
 >
 
 |cellule 1             |cellule 2
-|--------|--------|
-    A    |    B    
-    C    |    D    
+|:--------:|:--------:|
+    A        B    
+    C        D    
 
 >La zone continue ici
 Ici ce qui suit [Lien](https://example.com/ "titre de lien optionnel").
