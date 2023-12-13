@@ -5,7 +5,13 @@
 ~~Ce texte est barré.~~ mais pas celui-là.
 >Ceci est une **zone en retrait**.
 <https://example.com>
-`https://example.com`
+`https://example.com`Dans le texte ordinaire [^1] vous pouvez facilement placer des notes de bas de page [^2]
+[^1]: Vous trouverez ici le texte de la note de bas de page.
+ [^2]: **Note de page de page** peut aussi être *formatée*.
+Et celles-ci comprennent même plusieurs lignes
+
+>
+
 |cellule 1|cellule 2|
 |--------|--------|
 |    A    |    B    |
@@ -90,3 +96,75 @@ Ingénieur DevOps passionné par l'automatisation, l'intégration continue et le
 ---
 
 N'hésitez pas à personnaliser ce modèle en fonction de votre expérience, de vos compétences spécifiques et des exigences du poste auquel vous postulez. Bonne chance dans votre recherche d'emploi !
+
+
+# John Doe
+## Ingénieur DevOps & Cloud
+
+---
+
+## Expérience Professionnelle
+
+### Ingénieur DevOps | Entreprise XYZ | Janvier 2021 - Présent
+- Conception, implémentation et gestion de pipelines CI/CD pour automatiser le déploiement des applications.
+- Configuration et maintenance d'infrastructures cloud sur AWS, Azure et Google Cloud Platform.
+- Collaboration étroite avec les équipes de développement pour optimiser les processus de déploiement.
+
+### Ingénieur Système | Entreprise ABC | Juin 2018 - Décembre 2020
+- Administration et maintenance des serveurs Linux pour assurer la disponibilité des services.
+- Automatisation des tâches récurrentes à l'aide de scripts Shell et Ansible.
+- Mise en place de solutions de surveillance et gestion des incidents.
+
+---
+
+## Formation
+
+### Master en Ingénierie Informatique | Université XYZ | Septembre 2015 - Juin 2018
+
+---
+
+## Compétences
+
+- **Langages de Programmation :** Python, Bash
+- **Outils DevOps :** Docker, Kubernetes, Jenkins
+- **Cloud :** AWS, Azure, Google Cloud Platform
+- **Systèmes d'exploitation :** Linux (Ubuntu, CentOS), Windows Server
+- **Automatisation :** Ansible, Terraform
+- **Gestion de Configuration :** Git
+- **Surveillance et Logging :** ELK Stack, Prometheus, Grafana
+
+---
+
+## Projets Réalisés
+
+### Automatisation du Déploiement (Janvier 2022 - Mars 2022)
+- Mise en place d'un pipeline CI/CD pour un projet web, réduisant le temps de déploiement de 30%.
+- Utilisation de Docker pour la conteneurisation des applications.
+
+### Migration vers le Cloud (Mai 2021 - Août 2021)
+- Migration réussie d'une infrastructure sur site vers AWS, avec une amélioration de la disponibilité de 99.9%.
+- Utilisation de Terraform pour déployer et gérer l'infrastructure cloud.
+
+---
+
+## Certifications
+
+- Certifié AWS Certified DevOps Engineer - Professional
+- Certifié Kubernetes Administrator (CKA)
+- Certifié Ansible Automation Engineer
+
+---
+
+## Centres d'Intérêt
+
+- Participation active à des projets open source.
+- Veille technologique sur les dernières tendances DevOps et Cloud.
+- Pratique régulière du cyclisme.
+
+---
+
+## Références
+
+Disponibles sur demande.
+
+
