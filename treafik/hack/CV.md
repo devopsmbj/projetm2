@@ -2,6 +2,23 @@
 [Adresse]
 [Téléphone]
 [Email]
+~~Ce texte est barré.~~ mais pas celui-là.
+>Ceci est une **zone en retrait**.
+<https://example.com>
+`https://example.com`
+|cellule 1|cellule 2|
+|--------|--------|
+|    A    |    B    |
+|    C    |    D    |
+
+>La zone continue ici
+Ici ce qui suit [Lien](https://example.com/ "titre de lien optionnel").
+>Ceci est une autre **zone de retrait**.
+Cette zone continue également dans la ligne suivante.
+Cependan, cette ligne n’est plus en retrait
+[ ] A
+[x] B
+[ ] C
 
 ---
 
